@@ -7,3 +7,26 @@
 
 //* Output
 //* Print the maximum number.
+
+#include <stdio.h>
+#include <limits.h>
+int main()
+{
+  int count;
+  scanf("%d", &count);
+
+  int max = INT_MIN;
+
+  for (int i = 0; i < count; i++)
+  {
+    int num;
+    scanf("%d", &num);
+    if (max < num)
+    {
+      max = num;
+    }
+  };
+  printf("%d", max);
+
+  return 0;
+}
