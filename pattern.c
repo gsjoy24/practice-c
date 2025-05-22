@@ -1,17 +1,17 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-  int count;
-  scanf("%d", &count);
+  int N;
+  scanf("%d", &N);
 
-  for (int i = count; i >= 1; i--)
+  int space_count = 2 * N - 1;
+  int char_count = 1;
+
+  for (int i = 0; i < N; i++)
   {
-    for (int j = 0; j < i; j++)
-    {
-      printf("*");
-    }
-    printf("\n");
+    
   }
+  
   
   return 0;
 }
